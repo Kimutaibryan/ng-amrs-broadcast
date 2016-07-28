@@ -1,0 +1,31 @@
+<display-notification-directive data="data" ></display-notification-directive>
+<div class="header">
+  <nav class="navbar navbar-default navbar-fixed-top navbar-inverted" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" ng-click="isCollapsed = !isCollapsed">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#/home" rel="home" title="Notification Broadcast">
+          <!--<img style="max-width:100px; margin-top: -10px; padding-bottom: 2px;"
+               src="images/ampathLogo.png" alt="P.O.C">-->
+               <img src="images/Logo-large.png" style="max-height:40px; margin-top: -10px;" alt="P.O.C">
+        </a>
+      </div>
+      <div class="navbar-collapse" ng-class="{collapse: isCollapsed}">
+        <ul class="nav navbar-nav" style="cursor: pointer;">
+          <!--<li ui-sref-active="active" ui-sref="home"><a href="#/"><span class="text-primary"><b style="font-size:20px;"> P.O.C  </b><small>v0.1.0</small></span></a></li>-->
+          <li ui-sref-active="active" ui-sref="home" ng-click="isCollapsed = true">
+            <a href="#/home"><span class="glyphicon glyphicon-home"  aria-hidden="true"></span><span >&nbsp;home</span></a>
+          </li>
+          <li ui-sref-active="active" ui-sref="admin" ng-click="isCollapsed = true">
+            <a href="#/admin"><span><span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp;admin</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
